@@ -53,7 +53,7 @@ if uploaded is not None:
         st.image(
             Image.fromarray((np.squeeze(x) * 255).astype(np.uint8), mode="L").resize((112, 112)),
             caption="Preprocessed (28×28 grayscale)",
-            use_column_width=False,
+            use_container_width=False,
         )
 
     x_batch = np.expand_dims(x, axis=0)  # (1,28,28,1)
